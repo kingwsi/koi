@@ -1,0 +1,323 @@
+/*
+ * Globals
+ */
+
+/* Links */
+
+a:active {
+
+}
+a:focus{
+
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+.list-group-item.active {
+    background: #f17575;
+    border: #f17575;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #e4a9a9;
+}
+
+body {
+    display: -ms-flexbox !important;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    /*justify-content: center;*/
+    color: #fff;
+    /*text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);*/
+    /*box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);*/
+}
+
+.cover-container {
+    max-width: 42em;
+    min-width: 20em;
+}
+
+/*
+ * Header
+ */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .2rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .nav-masthead {
+        float: right;
+    }
+}
+
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 1.8rem;
+    margin-top: 10px;
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+.main-content {
+
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+    color: rgba(255, 255, 255, .5);
+}
+
+/**
+ * 缩略图 个人中心
+ */
+/*center*/
+
+.menu-thumbnail {
+}
+
+.menu-thumbnail > div {
+    padding-bottom: 10px;
+}
+
+.menu-thumbnail img {
+    border-radius: 5px;
+    height: 140px;
+    width: 100%;
+    display: block;
+}
+
+.menu-thumbnail .menu-thumbnail-float,
+.menu-thumbnail .menu-thumbnail-float:hover{
+    height: 140px;
+    width: 89.6%;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    background-color: #000;
+    opacity: .6;
+    padding-top: 55px;
+}
+.menu-thumbnail .menu-thumbnail-float:active{
+    background-color: #464646;
+}
+
+.menu-thumbnail .menu-thumbnail-float h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+    opacity: .9;
+}
+
+.product-title {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+/*秒杀价格*/
+.price-group {
+
+}
+
+.price-group .market-price {
+    color: #888888;
+    font-size: .8em;
+}
+
+.price-group .price {
+    color: #f7fff6;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#Buy_btn {
+    margin-top: 20px;
+}
+
+.rule {
+    display: block;
+    margin-top: 20px;
+}
+
+/*新增输入框*/
+.create-product-input {
+    margin: 15px 0px;
+}
+
+.create-product-item {
+    background-color: #f2d4d4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    text-shadow: 0 1px #fff;
+}
+
+.create-product-item span {
+    color: #828282;
+}
+
+.create-product-item small span {
+    color: #828282;
+    padding-left: 10px;
+}
+
+.create-product-item .media-left img {
+    border: #ffbcbc 2px solid;
+    border-radius: 5px;
+}
+
+.create-product-item {
+    color: #000;
+}
+
+.create-product-item small {
+    color: #007bff;
+
+}
+
+.create-product-item .media-right {
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+.product-item-info {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 5px 16px;
+}
+
+.product-item-info h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1em;
+    padding-top: 5px;
+}
+
+/*history*/
+.history-item-info {
+    text-align: left;
+}
+
+.create-product-item .history-status {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -5px;
+    right: -5px;
+    border-radius: 0 5px 0 0;
+}
+.koi-finish{
+    background: url("../images/history.png") 0px;
+}
+.koi-active{
+    background: url("../images/history.png") 70px;
+}
+/*模态框*/
+.koi_modal {
+    display: none;
+    background: #FFF;
+    color: #000000;
+    position: absolute;
+    padding: 20px 10px;
+    max-width: 440px;
+    border: #FFFFFF solid 1px;
+    border-radius: 5px;
+    z-index: 1500;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .2);
+}
+
+.koi-modal-warp {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #1b1e21;
+    opacity: .6
+}
+
+.koi_modal .koi_modal_title {
+    /*border-bottom: #dbdbdb 1px solid;*/
+    padding: 10px 5px;
+}
+
+.koi_modal .koi_modal_body {
+    /*padding: 20px 0;*/
+}
+
+.koi_modal .koi_modal_footer {
+    /*border-top: #dbdbdb 1px solid;*/
+    padding-top: 5px;
+}
+
+.koi_modal .koi_modal_footer button {
+    margin-right: 10px;
+    width: 100px;
+}
+
+.koi_modal .create-product-item {
+    background: none;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myCanvas{
+    width: 100%;
+}

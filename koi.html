@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>ASJKHDjkas</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/turntable.js"></script>
+    <script src="js/cover.js"></script>
+    <style>
+        .lottery {
+            position: relative;
+            display: inline-block;
+            text-align:center
+        }
+
+        .lottery img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -59px;
+            cursor: pointer;
+            width: 100px;
+
+        }
+
+        #message {
+            position: absolute;
+            top: 0px;
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body class="text-center">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead">
+        <div class="inner">
+            <h3 class="masthead-brand">锦鲤</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="index.html">首页</a>
+                <a class="nav-link" href="instant.html">限时秒杀</a>
+                <a class="nav-link active" href="#">个人中心</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="tab-card">
+        <div class="lottery">
+            <canvas id="myCanvas" width="350" height="350">
+                当前浏览器版本过低，请使用其他浏览器尝试
+            </canvas>
+            <p id="message"></p>
+            <img src="images/images/start.png" id="start">
+        </div>
+    </div>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
+                    href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+    </footer>
+    <div class="koi_modal" id="modal_1">
+        <div class="koi_modal_title">
+            <h4>中奖了</h4>
+        </div>
+        <div class="koi_modal_body">
+            <div class="media create-product-item">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="images/9.jpg" data-holder-rendered="true"
+                             style="width: 64px; height: 64px;">
+                    </a>
+                </div>
+                <div class="media-body product-item-info">
+                    <h4 class="media-heading">抽中奖品“iPhone 8 Plus”</h4>
+                    <span>Apple/苹果 iPhone 8 Plus</span>
+                </div>
+            </div>
+        </div>
+        <div class="koi_modal_footer">
+            <button type="button" class="btn btn-success">查看</button>
+        </div>
+    </div>
+    <script src="js/koi.js"></script>
+</div>
+
+</body>
+</html>
